@@ -27,6 +27,7 @@ function App() {
   };
   const updateMedal = () => {
     const updateMedal = {
+      country,
       gold: goldMedal,
       silver: silverMedal,
       copper: copperMedal,
@@ -88,7 +89,7 @@ function App() {
           <button type="submit" onClick={addMedal}>
             추가
           </button>
-          <button type="button" onClick={() => updateMedal(medalList.country)}>
+          <button type="button" onClick={updateMedal}>
             업데이트
           </button>
         </div>
